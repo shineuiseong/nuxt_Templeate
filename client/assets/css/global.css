@@ -15,3 +15,72 @@
 .login-wrap .login-form h1 {
   margin-bottom: 50px;
 }
+
+
+/***************************************************** 서브 페이지 ****************************************************/
+
+.sub-title-wrap {
+  min-width: 1460px;
+  height: 200px;
+  padding: 42px 50px;
+  background-color: #f5f8fa;
+}
+.sub-title-wrap h1 {
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: -1.6px;
+  color: #2c2c2c;
+  margin-left: 40px;
+  margin-bottom: 26px;
+  padding-top: 20px;
+  text-align: left;
+}
+.sub-title-wrap .sub-container-wrap {
+  min-height: 100%;
+  background-color: #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  padding: 20px 40px 30px;
+}
+.table-search-wrap .form-wrap {
+  border-bottom: 1px solid #eaeaea;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+.table-search-wrap .form-wrap.column-02 {
+  display: flex;
+}
+.table-search-wrap .form-wrap .search-dl-table {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.table-top {
+  margin-bottom: 16px;
+}
+.table-top.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.table-top .list-count {
+  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: -0.8px;
+  color: #999;
+  margin-right: 50px;
+}
+.table-top .list-count b {
+  color: #666;
+}
+.table-search-wrap + .table-top {
+  margin-top: 30px;
+}
+
+.select-view {
+  min-width: 160px;
+}
+
