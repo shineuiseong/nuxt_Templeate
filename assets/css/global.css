@@ -1,0 +1,17 @@
+
+
+/*************************************** 로그인 페이지 ****************************************************/
+.login-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+.login-wrap .login-form {
+  width: 500px;
+}
+.login-wrap .login-form h1 {
+  margin-bottom: 50px;
+}
