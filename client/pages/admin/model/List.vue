@@ -73,7 +73,7 @@
 				<div class="table-top space-between">
 					<v-spacer></v-spacer>
 					<div class="list-options">
-						<v-combobox id="select-view" :items="comboItems" outlined dense></v-combobox>
+						<v-combobox id="combo" :items="comboItems" outlined dense></v-combobox>
 					</div>
 					<div>
 						<v-text-field flat rounded solo-inverted reverse label="검색"> </v-text-field>
@@ -92,6 +92,12 @@
 					</v-col>
 					<v-col cols="1" align-self="center">
 						<v-combobox id="combo" :items="alignItems" outlined dense> </v-combobox>
+					</v-col>
+				</v-row>
+
+				<v-row>
+					<v-col cols="12">
+						<v-data-table> </v-data-table>
 					</v-col>
 				</v-row>
 			</div>
