@@ -1,5 +1,4 @@
 import colors from "vuetify/es5/util/colors";
-import VuetifyLoaderPlugin from "vuetify-loader/lib/plugin";
 export default {
   target: "server",
   mode: "universal",
@@ -59,16 +58,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     "~/plugins/vuetify.js",
-    "~/plugins/mixin.js",
-    "~/plugins/vue2-perfect-scrollbar.js",
     // "~/plugins/local-storage.js",
   ],
-  router: {
-    middleware: [
-      "auth",
-      // 'guard'
-    ],
-  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -77,35 +68,10 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
-    "nuxt-vuex-localstorage",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    "@nuxtjs/axios",
-    "@nuxtjs/proxy",
-    "nuxt-route-meta",
-    "nuxt-clipboard2",
-    "@nuxtjs/universal-storage",
-
-    ["cookie-universal-nuxt", { alias: "cookies" }],
-  ],
-
-  storage: {
-    vuex: {
-      namespace: "storage",
-    },
-    cookie: {
-      prefix: "",
-      options: {
-        path: "/",
-      },
-    },
-    localStorage: {
-      prefix: "",
-    },
-    ignoreExceptions: false,
-  },
+  modules: ["@nuxtjs/axios", "@nuxtjs/proxy"],
 
   axios: {
     proxy: false,
@@ -142,8 +108,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: ["vuetify/lib", "vee-validate/dist/rules"],
-    plugins: [new VuetifyLoaderPlugin()],
+    transpile: ["vuetify/lib"],
     loaders: {
       /*
        ** You can extend webpack config here
